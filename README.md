@@ -6,7 +6,7 @@ Docker image to run Ruby 1.9.3 applications
 Usage Dockerfile example
 ------------------------
 
-    FROM davidgaya/RVM-1.9.3
+    FROM davidgaya/rvm-1.9.3
 
     # Gem dependencies
     ADD ./Gemfile /app/
