@@ -11,6 +11,7 @@ RUN apt-get install -y openssl libreadline6 libreadline6-dev curl zlib1g zlib1g-
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 # install RVM, Ruby, and Bundler
+RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
 RUN \curl -L https://get.rvm.io | bash -s stable
 RUN /bin/bash -l -c "rvm requirements"
 RUN /bin/bash -l -c "rvm install 1.9.3"
